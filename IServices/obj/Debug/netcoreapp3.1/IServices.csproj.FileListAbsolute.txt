@@ -1,0 +1,12 @@
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\bin\Debug\netcoreapp3.1\IServices.deps.json
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\bin\Debug\netcoreapp3.1\IServices.dll
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\bin\Debug\netcoreapp3.1\IServices.pdb
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\bin\Debug\netcoreapp3.1\Model.dll
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\bin\Debug\netcoreapp3.1\Model.pdb
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.csprojAssemblyReference.cache
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.AssemblyInfoInputs.cache
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.AssemblyInfo.cs
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.csproj.CopyComplete
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.dll
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.pdb
+E:\A_Learn\软谋\微服务\MicroserviceAttempt\IServices\obj\Debug\netcoreapp3.1\IServices.csproj.CoreCompileInputs.cache

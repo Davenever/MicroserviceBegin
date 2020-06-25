@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroserviceAttempt", "MicroserviceAttempt\MicroserviceAttempt.csproj", "{2BDDB922-8BF7-4E41-A9E9-5FE7ACB779AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IServices", "IServices\IServices.csproj", "{F2D192BC-CC61-42CB-8371-055C20905C11}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{110B4233-04C2-4353-BCEA-AD5687D6A421}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{47960F17-51BC-4DF8-AB0F-F2ECAC5DE1C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicesInstances", "ServicesInstances\ServicesInstances.csproj", "{F996AE91-02D0-47C6-BCA7-F3E9DE8BAFD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameWork", "FrameWork\FrameWork.csproj", "{4DDFE777-F178-4C84-B430-C1F32EDE7D69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GateWay-Ocelot", "GateWay-Ocelot\GateWay-Ocelot.csproj", "{223DEFE9-2C50-47FB-9878-D54CDC786AA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BDDB922-8BF7-4E41-A9E9-5FE7ACB779AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BDDB922-8BF7-4E41-A9E9-5FE7ACB779AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BDDB922-8BF7-4E41-A9E9-5FE7ACB779AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BDDB922-8BF7-4E41-A9E9-5FE7ACB779AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2D192BC-CC61-42CB-8371-055C20905C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2D192BC-CC61-42CB-8371-055C20905C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2D192BC-CC61-42CB-8371-055C20905C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2D192BC-CC61-42CB-8371-055C20905C11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110B4233-04C2-4353-BCEA-AD5687D6A421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110B4233-04C2-4353-BCEA-AD5687D6A421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110B4233-04C2-4353-BCEA-AD5687D6A421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110B4233-04C2-4353-BCEA-AD5687D6A421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47960F17-51BC-4DF8-AB0F-F2ECAC5DE1C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47960F17-51BC-4DF8-AB0F-F2ECAC5DE1C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47960F17-51BC-4DF8-AB0F-F2ECAC5DE1C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47960F17-51BC-4DF8-AB0F-F2ECAC5DE1C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F996AE91-02D0-47C6-BCA7-F3E9DE8BAFD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F996AE91-02D0-47C6-BCA7-F3E9DE8BAFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F996AE91-02D0-47C6-BCA7-F3E9DE8BAFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F996AE91-02D0-47C6-BCA7-F3E9DE8BAFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDFE777-F178-4C84-B430-C1F32EDE7D69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDFE777-F178-4C84-B430-C1F32EDE7D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDFE777-F178-4C84-B430-C1F32EDE7D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDFE777-F178-4C84-B430-C1F32EDE7D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA41392F-C0E2-4BD4-8009-F7DBC1F565AB}
+	EndGlobalSection
+EndGlobal

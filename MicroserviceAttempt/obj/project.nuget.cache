@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EYtx3lCt35+F//yLJpPUDHPVUaD3G43BiAa6uRKI8YWnOF4KckDzHJh0jIhhGTYB1Eo+wCXjzSDFVdSvduR6ww==",
+  "dgSpecHash": "u7hP7s4SqEfZ5D2c/bRMGIpTMT2eM6wXk8DkCAxPKER1ajckV3/EKYHgOHBV2PECtLwF7tE9l9MIcJ9kq84AUw==",
   "success": true,
-  "projectFilePath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
+  "projectFilePath": "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\华硕\\.nuget\\packages\\autofac\\5.2.0\\autofac.5.2.0.nupkg.sha512",
     "C:\\Users\\华硕\\.nuget\\packages\\autofac.extensions.dependencyinjection\\6.0.0\\autofac.extensions.dependencyinjection.6.0.0.nupkg.sha512",

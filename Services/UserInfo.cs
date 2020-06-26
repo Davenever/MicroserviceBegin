@@ -20,7 +20,8 @@ namespace Services
                 {
                     id = i,
                     age = i + 15,
-                    name = "小强" + i + "号"
+                    name = "小强" + i + "号",
+                    dt = DateTime.Now
                 });
             }
             return list.Where(m => m.id == id).FirstOrDefault();

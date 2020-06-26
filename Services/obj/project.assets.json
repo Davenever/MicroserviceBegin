@@ -51,11 +51,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Services\\Services.csproj",
+      "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Services\\Services.csproj",
+      "projectPath": "E:\\A_Learn\\MicroserviceBegin\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-      "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Services\\obj\\",
+      "outputPath": "E:\\A_Learn\\MicroserviceBegin\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -76,8 +76,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj": {
-              "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj"
+            "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj": {
+              "projectPath": "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj"
             }
           }
         }

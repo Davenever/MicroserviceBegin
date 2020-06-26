@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using IServices;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +26,14 @@ namespace ServicesInstances.Controllers
         [HttpGet]
         public async Task<CustomerUser> GetCustomerUser()
         {
+            _logger.LogInformation(DateTime.Now + "调用了一次");
+            return await _userInfo.QueryUserInfoById(1);
+        }
+
+        [HttpGet]
+        public async Task<CustomerUser> TimeOut()
+        {
+            Thread.Sleep(5000);
             _logger.LogInformation(DateTime.Now + "调用了一次");
             return await _userInfo.QueryUserInfoById(1);
         }

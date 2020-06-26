@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\MicroserviceAttempt.csproj": {}
+    "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\MicroserviceAttempt.csproj": {}
   },
   "projects": {
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj": {
+    "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj",
+        "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj",
         "projectName": "FrameWork",
-        "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj",
+        "projectPath": "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj",
         "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-        "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\obj\\",
+        "outputPath": "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,14 +61,14 @@
         }
       }
     },
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj": {
+    "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj",
+        "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj",
         "projectName": "IServices",
-        "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj",
+        "projectPath": "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj",
         "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-        "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\obj\\",
+        "outputPath": "E:\\A_Learn\\MicroserviceBegin\\IServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -89,8 +89,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\Model.csproj": {
-                "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\Model.csproj"
+              "E:\\A_Learn\\MicroserviceBegin\\Model\\Model.csproj": {
+                "projectPath": "E:\\A_Learn\\MicroserviceBegin\\Model\\Model.csproj"
               }
             }
           }
@@ -122,14 +122,14 @@
         }
       }
     },
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\MicroserviceAttempt.csproj": {
+    "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\MicroserviceAttempt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
+        "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
         "projectName": "MicroserviceAttempt",
-        "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
+        "projectPath": "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\MicroserviceAttempt.csproj",
         "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-        "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\MicroserviceAttempt\\obj\\",
+        "outputPath": "E:\\A_Learn\\MicroserviceBegin\\MicroserviceAttempt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -150,11 +150,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj": {
-                "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj"
+              "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj": {
+                "projectPath": "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj"
               },
-              "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj": {
-                "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\IServices\\IServices.csproj"
+              "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj": {
+                "projectPath": "E:\\A_Learn\\MicroserviceBegin\\IServices\\IServices.csproj"
               }
             }
           }
@@ -221,14 +221,14 @@
         }
       }
     },
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\Model.csproj": {
+    "E:\\A_Learn\\MicroserviceBegin\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\Model.csproj",
+        "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\Model.csproj",
+        "projectPath": "E:\\A_Learn\\MicroserviceBegin\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-        "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\Model\\obj\\",
+        "outputPath": "E:\\A_Learn\\MicroserviceBegin\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\GateWay-Ocelot\\GateWay-Ocelot.csproj": {}
+    "E:\\A_Learn\\MicroserviceBegin\\GateWay-Ocelot\\GateWay-Ocelot.csproj": {}
   },
   "projects": {
-    "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\GateWay-Ocelot\\GateWay-Ocelot.csproj": {
+    "E:\\A_Learn\\MicroserviceBegin\\GateWay-Ocelot\\GateWay-Ocelot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\GateWay-Ocelot\\GateWay-Ocelot.csproj",
+        "projectUniqueName": "E:\\A_Learn\\MicroserviceBegin\\GateWay-Ocelot\\GateWay-Ocelot.csproj",
         "projectName": "GateWay-Ocelot",
-        "projectPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\GateWay-Ocelot\\GateWay-Ocelot.csproj",
+        "projectPath": "E:\\A_Learn\\MicroserviceBegin\\GateWay-Ocelot\\GateWay-Ocelot.csproj",
         "packagesPath": "C:\\Users\\华硕\\.nuget\\packages\\",
-        "outputPath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\GateWay-Ocelot\\obj\\",
+        "outputPath": "E:\\A_Learn\\MicroserviceBegin\\GateWay-Ocelot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -47,7 +47,15 @@
               "target": "Package",
               "version": "[16.0.1, )"
             },
+            "Ocelot.Cache.CacheManager": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
             "Ocelot.Provider.Consul": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Ocelot.Provider.Polly": {
               "target": "Package",
               "version": "[16.0.1, )"
             }

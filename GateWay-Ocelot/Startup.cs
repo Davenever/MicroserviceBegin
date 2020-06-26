@@ -10,9 +10,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Ocelot.Cache;
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Provider.Consul;
+using Ocelot.Provider.Polly;
 
 namespace GateWay_Ocelot
 {
@@ -28,8 +31,16 @@ namespace GateWay_Ocelot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot().AddConsul();
+            services.AddOcelot().AddConsul()
+                .AddCacheManager(m =>
+                {
+                    m.WithDictionaryHandle();//默认字典存储
+                })
+                .AddPolly();
             //services.AddControllers();
+
+            //这里的IOcelotCache<CachedResponse>是默认缓存的约束--准备替换成自定义的
+            services.AddSingleton<IOcelotCache<CachedResponse>, CustomeCache>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

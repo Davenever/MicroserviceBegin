@@ -174,34 +174,185 @@
 
 
   //*************************单地址多实例负载均衡+Consul*****************************
+  //"Routes": [
+  //  {
+  //    //GeteWay转发=>Downstream
+  //    "DownstreamPathTemplate": "/api/{url}", //服务地址--url变量
+  //    "DownstreamScheme": "http",
+  //    //http://localhost:6299/T5/User/GetCustomerUser
+  //    "UpstreamPathTemplate": "/T5/{url}", //网关地址--url变量 冲突的还可以加权重Priority
+  //    "UpstreamHttpMethod": [ "Get", "Post" ],
+  //    "UseServiceDiscovery": true, //使用服务发现
+  //    "ServiceName": "MicroserviceAttempt", //Consul服务名称
+  //    "LoadBalancerOptions": {
+  //      "Type": "RoundRobin" //轮询  //"LeastConnection":最少连接数服务器   "NoloadBalance":不负载均衡     "CookieStickySession":会话粘滞
+  //    }
+  //  }
+  //],
+  //"GlobalConfiguration": {
+  //  "BaseUrl": "http://127.0.0.1:6299",
+  //  "ServiceDiscoveryProvider": {
+  //    "Host": "localhost",
+  //    "Port": 8500,
+  //    "Type": "Consul" //由Consul提供服务发现,每次请求去Consul
+  //  }
+  //  //"ServiceDiscoveryProvider": {
+  //  //  "Host": "localhost",
+  //  //  "Port": 8500,
+  //  //  "Type": "PollConsul", //由Consul提供服务发现,每次请求去Consul
+  //  //  "PollingInterval": 1000//轮询Consul,评率毫秒--down是不知道的
+  //  //}
+  //},
+  //*************************单地址多实例负载均衡+Consul*****************************
+
+
+
+  //*************************Consul+Cache*****************************
+  //"Routes": [
+  //  {
+  //    //GeteWay转发=>Downstream
+  //    "DownstreamPathTemplate": "/api/{url}", //服务地址--url变量
+  //    "DownstreamScheme": "http",
+  //    //http://localhost:6299/T5/User/GetCustomerUser
+  //    "UpstreamPathTemplate": "/T5/{url}", //网关地址--url变量 冲突的还可以加权重Priority
+  //    "UpstreamHttpMethod": [ "Get", "Post" ],
+  //    "UseServiceDiscovery": true, //使用服务发现
+  //    "ServiceName": "MicroserviceAttempt", //Consul服务名称
+  //    "LoadBalancerOptions": {
+  //      "Type": "RoundRobin" //轮询  //"LeastConnection":最少连接数服务器   "NoloadBalance":不负载均衡     "CookieStickySession":会话粘滞
+  //    },
+  //    //使用缓存
+  //    "FileCacheOptions": {
+  //      "TtlSeconds": 15, //过期时间
+  //      "Region": "UserCache" //可以调用Api清理
+  //    }
+  //  }
+  //],
+  //"GlobalConfiguration": {
+  //  "BaseUrl": "http://127.0.0.1:6299",
+  //  "ServiceDiscoveryProvider": {
+  //    "Host": "localhost",
+  //    "Port": 8500,
+  //    "Type": "Consul" //由Consul提供服务发现,每次请求去Consul
+  //  }
+  //  //"ServiceDiscoveryProvider": {
+  //  //  "Host": "localhost",
+  //  //  "Port": 8500,
+  //  //  "Type": "PollConsul", //由Consul提供服务发现,每次请求去Consul
+  //  //  "PollingInterval": 1000//轮询Consul,评率毫秒--down是不知道的
+  //  //}
+  //},
+  //*************************Consul+Cache*****************************
+
+
+  //*************************Consul+Cache+超时+限流+熔断+降级*****************************
+  //"Routes": [
+  //  {
+  //    //GeteWay转发=>Downstream
+  //    "DownstreamPathTemplate": "/api/{url}", //服务地址--url变量
+  //    "DownstreamScheme": "http",
+  //    //http://localhost:6299/T5/User/GetCustomerUser
+  //    "UpstreamPathTemplate": "/T5/{url}", //网关地址--url变量 冲突的还可以加权重Priority
+  //    "UpstreamHttpMethod": [ "Get", "Post" ],
+  //    "UseServiceDiscovery": true, //使用服务发现
+  //    "ServiceName": "MicroserviceAttempt", //Consul服务名称
+  //    "LoadBalancerOptions": {
+  //      "Type": "RoundRobin" //轮询  //"LeastConnection":最少连接数服务器   "NoloadBalance":不负载均衡     "CookieStickySession":会话粘滞
+  //    },
+  //    //使用缓存
+  //    "FileCacheOptions": {
+  //      "TtlSeconds": 15, //过期时间
+  //      "Region": "UserCache" //可以调用Api清理
+  //    },
+  //    //限流  张队长贡献的
+  //    "RateLimitOptions": {
+  //      "ClientWhitelist": [ "Microservice", "Attempt" ], //白名单  ClientId区分大小写
+  //      "EnableRateLimiting": true,
+  //      "Period": "1s", //5m 1h 1d
+  //      "PeriodTimespan": 30, //多少秒之后客户端可以重试
+  //      "Limit": 5 //统计时间段内允许的最大请求数
+  //    },
+  //    "QoSOptions": {
+  //      "ExceptionsAllowedBeforeBreaking": 3, //熔断之前允许多少个异常请求
+  //      "DurationOfBreak": 10000, //熔断的时间,单位为ms.超过这个时间可再请求
+  //      "TimeoutValue": 4000 //如果下游请求的处理时间超过多少则将请求设置为超时  默认90秒
+  //    }
+  //  }
+  //],
+  //"GlobalConfiguration": {
+  //  "BaseUrl": "http://127.0.0.1:6299",
+  //  "ServiceDiscoveryProvider": {
+  //    "Host": "localhost",
+  //    "Port": 8500,
+  //    "Type": "Consul" //由Consul提供服务发现,每次请求去Consul
+  //  },
+  //  "RateLimitOptions": {
+  //    "QuotaExceededMessage": "Customize Tips!", //限流时返回的消息
+  //    "HttpStatusCode": 999 //限流时返回的code
+  //  }
+  //  //"ServiceDiscoveryProvider": {
+  //  //  "Host": "localhost",
+  //  //  "Port": 8500,
+  //  //  "Type": "PollConsul", //由Consul提供服务发现,每次请求去Consul
+  //  //  "PollingInterval": 1000//轮询Consul,评率毫秒--down是不知道的
+  //  //}
+  //}
+  //*************************Consul+Cache+超时+限流+熔断+降级*****************************
+
+
+
+  //*************************请求聚合aggregator*****************************
   "Routes": [
     {
-      //GeteWay转发=>Downstream
-      "DownstreamPathTemplate": "/api/{url}", //服务地址--url变量
+      "DownstreamPathTemplate": "/api/{url}",
       "DownstreamScheme": "http",
-      //http://localhost:6299/T5/User/GetCustomerUser
-      "UpstreamPathTemplate": "/T5/{url}", //网关地址--url变量 冲突的还可以加权重Priority
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5726
+        }
+      ],
+      "UpstreamPathTemplate": "/T5726/{url}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
-      "UseServiceDiscovery": true, //使用服务发现
-      "ServiceName": "MicroserviceAttempt", //Consul服务名称
-      "LoadBalancerOptions": {
-        "Type": "RoundRobin" //轮询  //"LeastConnection":最少连接数服务器   "NoloadBalance":不负载均衡     "CookieStickySession":会话粘滞
-      }
+      "Key": "T5726"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5727
+        }
+      ],
+      "UpstreamPathTemplate": "/T5727/{url}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "Key": "T5727"
+    },
+    {
+      "DownstreamPathTemplate": "/api/{url}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5728
+        }
+      ],
+      "UpstreamPathTemplate": "/T5728/{url}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "Key": "T5728"
     }
   ],
-  "GlobalConfiguration": {
-    "BaseUrl": "http://127.0.0.1:6299",
-    "ServiceDiscoveryProvider": {
-      "Host": "localhost",
-      "Port": 8500,
-      "Type": "Consul"//由Consul提供服务发现,每次请求去Consul
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "T5726",
+        "T5727",
+        "T5728"
+      ],
+      "UpstreamPathTemplate": "/UseAggregator/{url}"
     }
-    //"ServiceDiscoveryProvider": {
-    //  "Host": "localhost",
-    //  "Port": 8500,
-    //  "Type": "PollConsul", //由Consul提供服务发现,每次请求去Consul
-    //  "PollingInterval": 1000//轮询Consul,评率毫秒--down是不知道的
-    //}
-  }
-  //*************************单地址多实例负载均衡+Consul*****************************
+  ]
+  //*************************请求聚合aggregator*****************************
+
 }

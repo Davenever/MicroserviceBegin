@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zbd5hRSYgZp7+sFHm06k8iGuHQb6E/UszJJChiWGTRhDKVmRiO04krz/1zPZdW+LkjNJNh9Ne3h2hAbkRMzzOQ==",
+  "dgSpecHash": "E+ojPp/QnopP9Sz1K4zGM8mkEuE7xPugUZdtmoeoFXh7kymrOo3TmcVts9nnmXvZDKR7koScem6VM0eR4JE0hw==",
   "success": true,
-  "projectFilePath": "E:\\A_Learn\\软谋\\微服务\\MicroserviceAttempt\\FrameWork\\FrameWork.csproj",
+  "projectFilePath": "E:\\A_Learn\\MicroserviceBegin\\FrameWork\\FrameWork.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

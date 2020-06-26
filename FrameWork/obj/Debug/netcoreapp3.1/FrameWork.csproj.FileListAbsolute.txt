@@ -7,3 +7,11 @@ E:\A_Learn\软谋\微服务\MicroserviceAttempt\FrameWork\obj\Debug\netcoreapp3.
 E:\A_Learn\软谋\微服务\MicroserviceAttempt\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.dll
 E:\A_Learn\软谋\微服务\MicroserviceAttempt\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.pdb
 E:\A_Learn\软谋\微服务\MicroserviceAttempt\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.csproj.CoreCompileInputs.cache
+E:\A_Learn\MicroserviceBegin\FrameWork\bin\Debug\netcoreapp3.1\FrameWork.deps.json
+E:\A_Learn\MicroserviceBegin\FrameWork\bin\Debug\netcoreapp3.1\FrameWork.dll
+E:\A_Learn\MicroserviceBegin\FrameWork\bin\Debug\netcoreapp3.1\FrameWork.pdb
+E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.AssemblyInfoInputs.cache
+E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.AssemblyInfo.cs
+E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.csproj.CoreCompileInputs.cache
+E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.dll
+E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.pdb

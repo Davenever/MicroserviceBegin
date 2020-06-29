@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicesInstances", "Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameWork", "FrameWork\FrameWork.csproj", "{4DDFE777-F178-4C84-B430-C1F32EDE7D69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GateWay-Ocelot", "GateWay-Ocelot\GateWay-Ocelot.csproj", "{223DEFE9-2C50-47FB-9878-D54CDC786AA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GateWay-Ocelot", "GateWay-Ocelot\GateWay-Ocelot.csproj", "{223DEFE9-2C50-47FB-9878-D54CDC786AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationClient", "AuthenticationClient\AuthenticationClient.csproj", "{86BEC7D5-DD85-4D5F-B839-F847648478D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223DEFE9-2C50-47FB-9878-D54CDC786AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86BEC7D5-DD85-4D5F-B839-F847648478D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86BEC7D5-DD85-4D5F-B839-F847648478D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86BEC7D5-DD85-4D5F-B839-F847648478D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86BEC7D5-DD85-4D5F-B839-F847648478D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

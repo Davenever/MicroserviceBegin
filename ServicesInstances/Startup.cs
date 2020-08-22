@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using ServicesInstances.Uility;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.AspNetCore.Identity;
 
 namespace ServicesInstances
 {
@@ -35,6 +37,14 @@ namespace ServicesInstances
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            //services.AddAuthentication("Bearer")
+            //        .AddIdentityServerAuthentication(m =>
+            //        {
+            //            m.Authority = "http://localhost:7200";//Ids的地址，获取公钥
+            //            m.ApiName = "GetCustomerUser";
+            //            m.RequireHttpsMetadata = false;
+            //        });
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -68,7 +78,8 @@ namespace ServicesInstances
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthentication();//鉴权,没有鉴权,授权是没有意义的
+            app.UseAuthorization();//授权
 
             app.UseEndpoints(endpoints =>
             {

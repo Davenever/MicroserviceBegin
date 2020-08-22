@@ -272,6 +272,10 @@
         "PeriodTimespan": 30, //多少秒之后客户端可以重试
         "Limit": 5 //统计时间段内允许的最大请求数
       },
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Gatewaykey",
+        "AllowedScopes": []
+      },
       "QoSOptions": {
         "ExceptionsAllowedBeforeBreaking": 3, //熔断之前允许多少个异常请求
         "DurationOfBreak": 10000, //熔断的时间,单位为ms.超过这个时间可再请求

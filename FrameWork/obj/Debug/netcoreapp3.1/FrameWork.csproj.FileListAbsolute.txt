@@ -15,4 +15,3 @@ E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.Assembl
 E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.csproj.CoreCompileInputs.cache
 E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.dll
 E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.pdb
-E:\A_Learn\MicroserviceBegin\FrameWork\obj\Debug\netcoreapp3.1\FrameWork.csprojAssemblyReference.cache

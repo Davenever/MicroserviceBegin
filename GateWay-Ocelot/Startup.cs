@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,18 @@ namespace GateWay_Ocelot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region Identity4
+            var authenticationProviderKey = "Gatewaykey";
+            services.AddAuthentication("Bearer")
+                   .AddIdentityServerAuthentication(authenticationProviderKey, m =>
+                    {
+                        m.Authority = "http://localhost:7200";//Ids的地址，获取公钥
+                        m.ApiName = "GetCustomerUser";
+                        m.RequireHttpsMetadata = false;
+                        m.SupportedTokens = SupportedTokens.Both;
+                    });
+            #endregion
+
             services.AddOcelot().AddConsul()
                 .AddCacheManager(m =>
                 {

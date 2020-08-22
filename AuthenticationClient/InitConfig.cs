@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace AuthenticationClient
@@ -20,7 +21,7 @@ namespace AuthenticationClient
         {
             return new[]
             {
-                new ApiResource("UserApi","用户获取Api")
+                new ApiResource("GetCustomerUser","用户获取Api")
             };
         }
 
@@ -36,9 +37,15 @@ namespace AuthenticationClient
                {
                    ClientId="authentication",//客户端唯一标识
                    ClientSecrets=new[]{new Secret("auth123456".Sha256()) },//客户端密码进行加密
-                   //AllowedGrantTypes=(ICollection<string>)GrantType.ClientCredentials.AsEnumerable(),//验证模式
+                   //AllowedGrantTypes=GrantType.ClientCredentials,//验证模式
                    AllowedGrantTypes={GrantType.ClientCredentials },//验证模式
-                   AllowedScopes=new []{ "UserApi"}//运行访问的资源，该用户可访问哪些Api
+                   AllowedScopes=new []{ "GetCustomerUser"},//作用域,可以访问的资源，该用户可访问哪些Api
+                   Claims=new List<Claim>()
+                   {
+                       new Claim(IdentityModel.JwtClaimTypes.Role,"admin"),
+                        new Claim(IdentityModel.JwtClaimTypes.NickName,"江北"),
+                         new Claim("Email","18872046079@163.com"),
+                   }
                }
             };
         }

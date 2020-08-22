@@ -27,10 +27,11 @@ namespace AuthenticationClient
         {
             services.AddControllers();
 
-            services.AddIdentityServer()
+            //客户端模式--怎么执行Ids4
+            services.AddIdentityServer()//怎么处理
                 .AddDeveloperSigningCredential()//默认开发者证书
-                .AddInMemoryClients(InitConfig.GetClients())
-                .AddInMemoryApiResources(InitConfig.GetApiResources());
+                .AddInMemoryClients(InitConfig.GetClients())//InMemory 内存模式
+                .AddInMemoryApiResources(InitConfig.GetApiResources());//能访问啥资源
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

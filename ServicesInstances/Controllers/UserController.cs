@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Model;
@@ -24,6 +25,7 @@ namespace ServicesInstances.Controllers
         }
 
         [HttpGet]
+        //[Authorize]
         public async Task<CustomerUser> GetCustomerUser()
         {
             _logger.LogInformation(DateTime.Now + "调用了一次");
